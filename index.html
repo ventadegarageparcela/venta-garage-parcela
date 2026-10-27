@@ -3,119 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venta de Garaje Parcela | Herramientas, Maceteros y Exterior</title>
-  <meta name="description" content="Venta de herramientas de jardin, maceteros de hormigon, fogones de fierro y articulos de exterior. Parcela real, precios honestos.">
+  <title>Venta de Garaje Parcela | Maceteros y artículos de exterior</title>
+  <meta name="description" content="Maceteros de hormigón y artículos de exterior usados y nuevos. Venta directa desde parcela, precios honestos y disponibilidad por WhatsApp.">
+  <meta name="theme-color" content="#F7F3EB">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header -->
   <header class="header">
-    <div class="container">
-      <div class="logo">Venta de Garaje <span>Parcela</span></div>
-      <nav class="nav">
-        <a href="#productos">Productos</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
+    <div class="container header-inner">
+      <a class="logo" href="#inicio">Venta de Garaje <span>Parcela</span></a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#productos">Productos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1>Cosas de parcela,<br>nuevas y usadas, reales y en perfecto estado</h1>
-      <p class="hero-text">Herramientas, maceteros de hormigón, fogones y más. Todo desde una parcela real.</p>
-      <a href="#productos" class="btn">Ver qué hay</a>
-    </div>
-  </section>
-
-  <!-- Categorías -->
-  <section class="categorias" id="productos">
-    <div class="container">
-      <h2>Nuestros productos</h2>
-      <div class="grid-categorias">
-        <div class="card-cat">
-          <div class="icon">🛠️</div>
-          <h3>Herramientas</h3>
-          <p>Palas, picotas, desbrozadoras y herramientas de construcción en desuso pero excelente estado.</p>
-        </div>
-        <div class="card-cat">
-          <div class="icon">🏡</div>
-          <h3>Maceteros de hormigón</h3>
-          <p>Redondos y semi-redondos. Grandes, pesados y hechos para exterior. Ideales para plantas grandes o llenarlos de agua.</p>
-        </div>
-        <div class="card-cat">
-          <div class="icon">🔥</div>
-          <h3>Fogones y braseros</h3>
-          <p>Braseros sencillos de fierro hechos a mano. Resistentes y para patio o parcela.</p>
-        </div>
-        <div class="card-cat">
-          <div class="icon">🌱</div>
-          <h3>Exterior</h3>
-          <p>Mesas, sillas, luminaria y otros artículos de patio. Todo pensado para afuera.</p>
-        </div>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <span class="hero-kicker">Hallazgos para tu patio y parcela</span>
+        <h1>Cosas de parcela,<br>reales y en buen estado</h1>
+        <p class="hero-text">Maceteros de hormigón y artículos de exterior, nuevos y usados. Mira lo que hay disponible y pregúntanos sin compromiso.</p>
+        <a href="#productos" class="btn">Ver productos</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Destacados -->
-  <section class="destacados">
-    <div class="container">
-      <h2>Algunos destacados</h2>
-      <p class="subtitulo">Fotos reales próximamente. vamos actualizando y subiendo lso productos dia a dia.</p>
-      
-      <div class="grid-productos">
-        <div class="card-producto">
-          <div class="img-placeholder">Macetero hormigón</div>
-          <h3>Macetero grande de hormigón</h3>
-          <p>Semi-redondo / redondo. Ideal para agaves o plantas de exterior.</p>
+    <section class="catalogo" id="productos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Lo que hay por ahora</span>
+          <h2>Productos disponibles</h2>
+          <p>Fotos reales de los artículos. La disponibilidad puede cambiar: consúltanos antes de venir.</p>
         </div>
-        <div class="card-producto">
-          <div class="img-placeholder">Brasero de fierro</div>
-          <h3>Brasero sencillo de fierro</h3>
-          <p>Hecho con soldaduras. Resistente y listo para usar en el exterior.</p>
+        <div class="filtros" aria-label="Filtrar productos">
+          <button class="filtro activo" type="button" data-filtro="Todos" aria-pressed="true">Todo</button>
+          <button class="filtro" type="button" data-filtro="Maceteros" aria-pressed="false">Maceteros</button>
+          <button class="filtro" type="button" data-filtro="Exterior" aria-pressed="false">Exterior</button>
         </div>
-        <div class="card-producto">
-          <div class="img-placeholder">Herramientas</div>
-          <h3>Juego de herramientas</h3>
-          <p>Palas, picotas y herramientas de construcción en exelente estado.</p>
+        <div class="grid-productos">
+        <article class="card-producto" data-categoria="Maceteros">
+          <a class="foto-producto" href="images/producto-3.jpg" target="_blank" rel="noopener" aria-label="Ver foto de Macetero de hormigón media bola — 30 cm">
+            <img src="images/producto-3.jpg" alt="Macetero de hormigón media bola — 30 cm" loading="lazy">
+          </a>
+          <div class="producto-contenido">
+            <div class="producto-etiquetas"><span class="etiqueta usado">Usado</span><span class="categoria-mini">Maceteros</span></div>
+            <h3>Macetero de hormigón media bola — 30 cm</h3>
+            <p class="descripcion-producto">Macetero de hormigón tipo media bola, de 30 cm de diámetro y 25 cm de alto. También puede usarse como bebedero de agua.</p>
+            <div class="producto-pie"><strong class="precio">$30.000</strong><a class="btn btn-producto" href="#contacto">Consultar</a></div>
+          </div>
+        </article>
+        <article class="card-producto" data-categoria="Maceteros">
+          <a class="foto-producto" href="images/producto-4.jpg" target="_blank" rel="noopener" aria-label="Ver foto de Macetero de hormigón media bola — 60 cm">
+            <img src="images/producto-4.jpg" alt="Macetero de hormigón media bola — 60 cm" loading="lazy">
+          </a>
+          <div class="producto-contenido">
+            <div class="producto-etiquetas"><span class="etiqueta usado">Usado</span><span class="categoria-mini">Maceteros</span></div>
+            <h3>Macetero de hormigón media bola — 60 cm</h3>
+            <p class="descripcion-producto">Macetero de media bola de 60 cm de diámetro y 50 cm de alto. Incluye planta y sustrato.</p>
+            <div class="producto-pie"><strong class="precio">$50.000</strong><a class="btn btn-producto" href="#contacto">Consultar</a></div>
+          </div>
+        </article>
+        <article class="card-producto" data-categoria="Maceteros">
+          <a class="foto-producto" href="images/producto-5.jpg" target="_blank" rel="noopener" aria-label="Ver foto de Macetero de hormigón media bola — 90 cm">
+            <img src="images/producto-5.jpg" alt="Macetero de hormigón media bola — 90 cm" loading="lazy">
+          </a>
+          <div class="producto-contenido">
+            <div class="producto-etiquetas"><span class="etiqueta nuevo">Nuevo</span><span class="categoria-mini">Maceteros</span></div>
+            <h3>Macetero de hormigón media bola — 90 cm</h3>
+            <p class="descripcion-producto">Macetero grande de 90 cm de diámetro y 70 cm de alto, con plantas acuáticas. Consulta precio y disponibilidad.</p>
+            <div class="producto-pie"><strong class="precio">Consultar precio</strong><a class="btn btn-producto" href="#contacto">Consultar</a></div>
+          </div>
+        </article>
+        <article class="card-producto" data-categoria="Maceteros">
+          <a class="foto-producto" href="images/producto-7.jpg" target="_blank" rel="noopener" aria-label="Ver foto de Macetero circular de hormigón — 60 cm">
+            <img src="images/producto-7.jpg" alt="Macetero circular de hormigón — 60 cm" loading="lazy">
+          </a>
+          <div class="producto-contenido">
+            <div class="producto-etiquetas"><span class="etiqueta usado">Usado</span><span class="categoria-mini">Maceteros</span></div>
+            <h3>Macetero circular de hormigón — 60 cm</h3>
+            <p class="descripcion-producto">Macetero circular de 60 cm de diámetro y 50 cm de alto, con planta y sustrato.</p>
+            <div class="producto-pie"><strong class="precio">$80.000</strong><a class="btn btn-producto" href="#contacto">Consultar</a></div>
+          </div>
+        </article>
+        <article class="card-producto" data-categoria="Maceteros">
+          <a class="foto-producto" href="images/producto-8.jpg" target="_blank" rel="noopener" aria-label="Ver foto de Macetero cuadrado de hormigón — 40 × 40 × 50 cm">
+            <img src="images/producto-8.jpg" alt="Macetero cuadrado de hormigón — 40 × 40 × 50 cm" loading="lazy">
+          </a>
+          <div class="producto-contenido">
+            <div class="producto-etiquetas"><span class="etiqueta nuevo">Nuevo</span><span class="categoria-mini">Maceteros</span></div>
+            <h3>Macetero cuadrado de hormigón — 40 × 40 × 50 cm</h3>
+            <p class="descripcion-producto">Macetero cuadrado de hormigón, nuevo. Medidas: 40 × 40 cm de base y 50 cm de alto.</p>
+            <div class="producto-pie"><strong class="precio">$50.000</strong><a class="btn btn-producto" href="#contacto">Consultar</a></div>
+          </div>
+        </article>
+        <article class="card-producto" data-categoria="Maceteros">
+          <a class="foto-producto" href="images/producto-9.jpg" target="_blank" rel="noopener" aria-label="Ver foto de Macetero cuadrado con cactus — 40 × 40 × 50 cm">
+            <img src="images/producto-9.jpg" alt="Macetero cuadrado con cactus — 40 × 40 × 50 cm" loading="lazy">
+          </a>
+          <div class="producto-contenido">
+            <div class="producto-etiquetas"><span class="etiqueta nuevo">Nuevo</span><span class="categoria-mini">Maceteros</span></div>
+            <h3>Macetero cuadrado con cactus — 40 × 40 × 50 cm</h3>
+            <p class="descripcion-producto">Macetero cuadrado de hormigón con cactus y sustrato incluidos. Medidas: 40 × 40 cm de base y 50 cm de alto.</p>
+            <div class="producto-pie"><strong class="precio">$100.000</strong><a class="btn btn-producto" href="#contacto">Consultar</a></div>
+          </div>
+        </article>
+        <article class="card-producto" data-categoria="Exterior">
+          <a class="foto-producto" href="images/producto-18.jpg" target="_blank" rel="noopener" aria-label="Ver foto de Silla de fierro para exterior">
+            <img src="images/producto-18.jpg" alt="Silla de fierro para exterior" loading="lazy">
+          </a>
+          <div class="producto-contenido">
+            <div class="producto-etiquetas"><span class="etiqueta usado">Usado</span><span class="categoria-mini">Exterior</span></div>
+            <h3>Silla de fierro para exterior</h3>
+            <p class="descripcion-producto">Silla de fierro para patio o terraza. Escríbenos para consultar precio y disponibilidad.</p>
+            <div class="producto-pie"><strong class="precio">Consultar precio</strong><a class="btn btn-producto" href="#contacto">Consultar</a></div>
+          </div>
+        </article>
+        <article class="card-producto" data-categoria="Exterior">
+          <a class="foto-producto" href="images/producto-19.jpg" target="_blank" rel="noopener" aria-label="Ver foto de Mesa de fierro y vidrio para exterior — 4 personas">
+            <img src="images/producto-19.jpg" alt="Mesa de fierro y vidrio para exterior — 4 personas" loading="lazy">
+          </a>
+          <div class="producto-contenido">
+            <div class="producto-etiquetas"><span class="etiqueta usado">Usado</span><span class="categoria-mini">Exterior</span></div>
+            <h3>Mesa de fierro y vidrio para exterior — 4 personas</h3>
+            <p class="descripcion-producto">Mesa de exterior de fierro y vidrio. La planilla indica capacidad para 4 personas y medidas de 1,50 × 1,50 m.</p>
+            <div class="producto-pie"><strong class="precio">$80.000</strong><a class="btn btn-producto" href="#contacto">Consultar</a></div>
+          </div>
+        </article>
+        <article class="card-producto" data-categoria="Exterior">
+          <a class="foto-producto" href="images/producto-21.jpg" target="_blank" rel="noopener" aria-label="Ver foto de Mesa de centro de madera">
+            <img src="images/producto-21.jpg" alt="Mesa de centro de madera" loading="lazy">
+          </a>
+          <div class="producto-contenido">
+            <div class="producto-etiquetas"><span class="etiqueta usado">Usado</span><span class="categoria-mini">Exterior</span></div>
+            <h3>Mesa de centro de madera</h3>
+            <p class="descripcion-producto">Mesa de centro de madera usada. Medidas registradas en la planilla: 20 × 40 × 40 cm de alto.</p>
+            <div class="producto-pie"><strong class="precio">$25.000</strong><a class="btn btn-producto" href="#contacto">Consultar</a></div>
+          </div>
+        </article>
         </div>
+        <p class="aviso-catalogo">¿No encuentras lo que buscas? Vamos agregando artículos a medida que estén disponibles.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Nosotros -->
-  <section class="nosotros" id="nosotros">
-    <div class="container">
-      <h2>De dónde sale esto</h2>
-      <p>Todo se vende desde una parcela real. Son cosas que ya no usamos, herramientas que quedaron guardadas, y también piezas que estamos fabricando (maceteros de hormigón y braseros de fierro).</p>
-      <p>No es una tienda online grande. Es venta directa, precios honestos y retiro o entrega a coordinar.</p>
-    </div>
-  </section>
+    <section class="nosotros" id="nosotros">
+      <div class="container nosotros-inner">
+        <span class="eyebrow">Venta directa</span>
+        <h2>De nuestra parcela para la tuya</h2>
+        <p>Una feria de garaje en línea: cosas que ya no usamos, artículos de exterior y piezas que fabricamos. Publicamos lo que tenemos y vamos actualizando el catálogo cuando algo se vende o entra un producto nuevo.</p>
+        <p>Retiro o entrega, según coordinación. Pregunta por el estado y la disponibilidad de cada artículo.</p>
+      </div>
+    </section>
 
-  <!-- Contacto -->
-  <section class="contacto" id="contacto">
-    <div class="container">
-      <h2>¿Te interesa algo?</h2>
-      <p>Escríbenos por WhatsApp. Te respondemos con fotos reales y disponibilidad.</p>
-      <a href="https://wa.me/56912345678" class="btn btn-whatsapp" target="_blank" rel="noopener">
-        Escribir por WhatsApp
-      </a>
-      <p class="nota"></p>
-    </div>
-  </section>
+    <section class="contacto" id="contacto">
+      <div class="container">
+        <span class="eyebrow eyebrow-claro">¿Te interesó algo?</span>
+        <h2>Conversemos por WhatsApp</h2>
+        <p>Menciona el producto que te gustó y te confirmamos disponibilidad y detalles.</p>
+        <!-- CAMBIAR: reemplaza el número de ejemplo por el WhatsApp real, con código de país y sin + ni espacios. -->
+        <a href="https://wa.me/56987265649" class="btn btn-whatsapp" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <p class="nota">Venta directa · Precios en pesos chilenos · Disponibilidad sujeta a confirmación</p>
+      </div>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>Venta de Garaje Parcela · Cosas reales de exterior</p>
-      <p class="small">Página hecha con cariño para poder hacer mas facil la compra de nuestra clientela</p>
-    </div>
-  </footer>
-
+  <footer class="footer"><div class="container"><p>Venta de Garaje Parcela · Cosas reales de exterior</p><p class="small">Una parcela, muchos hallazgos.</p></div></footer>
+  <script>
+    const filtros = document.querySelectorAll('.filtro');
+    const productos = document.querySelectorAll('.card-producto');
+    filtros.forEach((boton) => {
+      boton.addEventListener('click', () => {
+        const filtro = boton.dataset.filtro;
+        filtros.forEach((b) => { b.classList.toggle('activo', b === boton); b.setAttribute('aria-pressed', String(b === boton)); });
+        productos.forEach((producto) => { producto.hidden = filtro !== 'Todos' && producto.dataset.categoria !== filtro; });
+      });
+    });
+  </script>
 </body>
 </html>
+
